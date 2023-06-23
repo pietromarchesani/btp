@@ -5,3 +5,4 @@ service CatalogService {
   entity Authors @readonly as projection on my.Authors;
   entity Orders @insertonly as projection on my.Orders;
 }
+annotate CatalogService with @(requires: ['BookshopAdmin']);

@@ -1,0 +1,28 @@
+{
+  "xsappname": "my-bookshop-hybrid",
+  "tenant-mode": "dedicated",
+  "oauth2-configuration": {
+    "redirect-uris": [
+      "https://5000--main--btp-nodejs-learning--pmarchesani.cdr.k8s.boote.it/login/callback",
+      "https://8d781080trial-dev-my-bookshop.cfapps.us10-001.hana.ondemand.com/login/callback"
+    ]
+  },
+
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.BookshopAdmin",
+      "description": "Bookshop Administrator"
+    }
+  ],
+  "attributes": [],
+  "role-templates": [
+    {
+      "name": "BookshopAdmin",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.BookshopAdmin"
+      ],
+      "attribute-references": []
+    }
+  ]
+}
