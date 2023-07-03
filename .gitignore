@@ -18,6 +18,11 @@ target/
 *.mtar
 mta_archives/
 
+# Fiori
+app/*/dist/
+resources/
+app/*/package-lock.json
+
 # Other
 .DS_Store
 *.orig

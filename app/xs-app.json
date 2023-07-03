@@ -12,5 +12,6 @@
       "destination": "srv-api",
       "csrfProtection": true
     }
-  ]
+  ],
+  "welcomeFile": "/app/books/webapp/index.html"
 }
