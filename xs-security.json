@@ -1,5 +1,5 @@
 {
-  "xsappname": "my-bookshop-hybrid",
+  "xsappname": "my-bookshop",
   "tenant-mode": "dedicated",
   "oauth2-configuration": {
     "redirect-uris": [
@@ -12,6 +12,10 @@
     {
       "name": "$XSAPPNAME.BookshopAdmin",
       "description": "Bookshop Administrator"
+    },
+    {
+      "name": "$XSAPPNAME.BookshopViewer",
+      "description": "Bookshop Viewer"
     }
   ],
   "attributes": [],
@@ -21,6 +25,14 @@
       "description": "generated",
       "scope-references": [
         "$XSAPPNAME.BookshopAdmin"
+      ],
+      "attribute-references": []
+    },
+    {
+      "name": "BookshopViewer",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.BookshopViewer"
       ],
       "attribute-references": []
     }
